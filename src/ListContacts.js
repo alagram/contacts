@@ -23,9 +23,7 @@ class ListContacts extends Component {
 
     const showingContacts = query === ''
       ? contacts
-      : contacts.filter((c) => (
-          c.name.toLowerCase().includes(query.toLowerCase())
-        ))
+      : contacts.filter( (c) => c.name.toLowerCase().includes(query.toLowerCase()) )
 
     return (
       <div className='list-contacts'>
